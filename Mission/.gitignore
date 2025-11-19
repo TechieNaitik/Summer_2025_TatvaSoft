@@ -1,0 +1,18 @@
+# Ignore all .NET build folders
+bin/
+obj/
+.vs/
+packages/
+
+# Ignore build outputs everywhere
+**/bin/
+**/obj/
+
+# Ignore compiled files
+*.dll
+*.exe
+*.pdb
+
+# System files
+.DS_Store
+Thumbs.db
