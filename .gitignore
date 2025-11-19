@@ -1,4 +1,12 @@
-# Ignore Mission build artifacts
+# Ignore only the Docs folder
+Docs/
+
+# Node / frontend common ignores
+ci_platfrom_app-develop/node_modules/
+ci_platfrom_app-develop/dist/
+ci_platfrom_app-develop/build/
+
+# VS / backend common ignores
 Mission/**/bin/
 Mission/**/obj/
 Mission/**/.vs/
@@ -7,12 +15,6 @@ Mission/**/*.dll
 Mission/**/*.exe
 Mission/**/*.pdb
 
-# Ignore ci_platfrom_app-develop build folders
-ci_platfrom_app-develop/node_modules/
-ci_platfrom_app-develop/dist/
-ci_platfrom_app-develop/build/
-
-# Ignore system files
+# System files
 .DS_Store
 Thumbs.db
-
