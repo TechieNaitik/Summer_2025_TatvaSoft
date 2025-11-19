@@ -1,11 +1,4 @@
-# Ignore everything by default
-*
-
-# But DO NOT ignore these folders (keep them)
-!/Mission/
-!/ci_platfrom_app-develop/
-
-# Inside Mission: ignore .NET build folders
+# Ignore Mission build artifacts
 Mission/**/bin/
 Mission/**/obj/
 Mission/**/.vs/
@@ -14,10 +7,12 @@ Mission/**/*.dll
 Mission/**/*.exe
 Mission/**/*.pdb
 
-# Inside ci_platform_app-develop: ignore node and build folders
-ci_platform_app-develop/node_modules/
-ci_platform_app-develop/dist/
-ci_platform_app-develop/build/
+# Ignore ci_platfrom_app-develop build folders
+ci_platfrom_app-develop/node_modules/
+ci_platfrom_app-develop/dist/
+ci_platfrom_app-develop/build/
 
-# Allow gitignore files inside subfolders
-!.gitignore
+# Ignore system files
+.DS_Store
+Thumbs.db
+

@@ -1,0 +1,5 @@
+dotnet add Mission.Entities package Npgsql.EntityFrameworkCore.Database.Command
+dotnet add Mission.Entities package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add Mission.Entities package Microsoft.EntityFrameworkCore.Design
+dotnet build Mission.Entities
+dotnet ef database update --project Mission.Entities --startup-project Mission
